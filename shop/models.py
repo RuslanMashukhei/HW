@@ -5,7 +5,7 @@ class Item(models.Model):
     price=models.IntegerField()
 
     def __str__(self):
-        return self.name
+        return f"Товар {self.name} . Стоит {self.price}"
 
 class Purchase(models.Model):
     name=models.CharField(max_length=255)
